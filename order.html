@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link rel="stylesheet" href="./order.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="container">
+          <li><a href="./home.html">Home Page</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./tutorials.html">Tutorials</a></li>
+          <li><a href="./order.html">Order</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="">
+        <fieldset>
+          <legend><h1>Place Your Custom Sewing Order</h1></legend>
+
+          <br /><br /><br />
+
+          <label for="name">Name (required):</label>
+          <input type="text" id="name" name="name" required />
+
+          <br /><br />
+
+          <label for="email">Email (required):</label>
+          <input type="email" id="email" name="email" required />
+
+          <br /><br />
+
+          <label for="phone">Phone Number (optional):</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <br /><br />
+
+          <label for="project-type">Project Type (required):</label>
+          <select id="project-type" name="project-type" required>
+            <option value="">--Please choose an option--</option>
+            <option value="dress">Dress</option>
+            <option value="bag">Tote Bag</option>
+            <option value="pillow">Pillow Covers</option>
+            <option value="accessory">Accessory</option>
+            <option value="other">Other</option>
+          </select>
+
+          <br /><br />
+
+          <label for="fabric">Fabric Preference:</label>
+          <select id="fabric-preference" name="fabric-preference" required>
+            <option value="">--Please choose an option--</option>
+            <option value="satin">Satin</option>
+            <option value="silk">Silk</option>
+            <option value="cotton">Cotton</option>
+            <option value="linen">Linen</option>
+            <option value="denim">Denim</option>
+            <option value="wool">Wool</option>
+            <option value="leather">Leather</option>
+            <option value="velvet">Velvet</option>
+            <option value="lace">Lace</option>
+            <option value="jersey">Jersey</option>
+            <option value="rayon">Rayon</option>
+            <option value="crepe">Crepe</option>
+            <option value="poleyester">Polyester</option>
+          </select>
+
+          <br /><br />
+
+          <label for="project-type">size (required):</label>
+          <select id="project-type" name="project-type" required>
+            <option value="">--Please choose an option--</option>
+            <option value="dress">Dress</option>
+            <option value="bag">Tote Bag</option>
+            <option value="pillow">Pillow Covers</option>
+            <option value="accessory">Accessory</option>
+            <option value="other">Other</option>
+          </select>
+
+          <br /><br />
+
+          <label for="size">Select Your Size (optional):</label>
+          <select id="size" name="size">
+            <option value="">--Choose your size--</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <p><a href="#size-chart">Don't know your size? Let's find out.</a></p>
+
+          <br /><br />
+
+          <label for="measurements"
+            >Measurements (optional for clothing projects):</label
+          >
+          <textarea
+            id="measurements"
+            name="measurements"
+            rows="4"
+            placeholder="Provide any specific measurements here..."
+          ></textarea>
+
+          <br /><br />
+
+          <label for="details">Additional Details:</label>
+          <textarea
+            id="details"
+            name="details"
+            rows="4"
+            placeholder="Any special requests or customizations?"
+          ></textarea>
+
+          <br /><br />
+
+          <label for="deadline">Deadline (optional):</label>
+          <input type="date" id="deadline" name="deadline" />
+          <br /><br />
+
+          <button type="submit">Submit Order</button>
+        </fieldset>
+      </form>
+
+      <br /><br /><br />
+      <h2>Size Guide</h2>
+      <p>
+        Please refer to the chart below to select the correct size for your
+        custom clothing orders. If you're not sure about your size, feel free to
+        enter your exact measurements in the form.
+      </p>
+
+      <br /><br />
+
+      <!-- Size chart goes here -->
+      <h2 id="size-chart">Women's Size Chart</h2>
+
+      <br /><br />
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Bust (cm)</th>
+            <th>Waist (cm)</th>
+            <th>Hips (cm)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>XS</td>
+            <td>79 - 82</td>
+            <td>61 - 64</td>
+            <td>84 - 87</td>
+          </tr>
+          <tr>
+            <td>S</td>
+            <td>84 - 87</td>
+            <td>66 - 69</td>
+            <td>89 - 92</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>89 - 92</td>
+            <td>71 - 74</td>
+            <td>94 - 97</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>94 - 99</td>
+            <td>76 - 81</td>
+            <td>99 - 104</td>
+          </tr>
+          <tr>
+            <td>XL</td>
+            <td>102 - 107</td>
+            <td>84 - 89</td>
+            <td>107 - 112</td>
+          </tr>
+          <tr>
+            <td>XXL</td>
+            <td>109 - 114</td>
+            <td>91 - 97</td>
+            <td>114 - 119</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <br /><br /><br />
+
+    <footer>
+      <p>&copy; 2024 Nazanin's Sewing Creations. All Rights Reserved.</p>
+
+      <p>Have questions? Email us at <a href="#">nazansewing@gmail.com</a></p>
+
+      <div class="footer-links">
+        <a href="home.html">Home</a> | <a href="projects.html">Projects</a> |
+        <a href="tutorials.html">Tutorials</a> |
+        <a href="orders.html">Orders</a>
+      </div>
+
+      <div class="social-media">
+        <p>Follow us on:</p>
+        <a href="#" target="_blank">Instagram</a> |
+        <a href="#" target="_blank">Pinterest</a>
+      </div>
+    </footer>
+  </body>
+</html>
