@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lato;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+nav {
+  background-color: rgb(36, 36, 36);
+  height: 50px;
+  padding-top: 12px;
+}
+
+ul {
+  list-style: none;
+}
+
+.page-header {
+  width: 100%;
+  height: 800px;
+  background-image: url("./image/page-header-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  color: rgb(36, 36, 36);
+  padding: 15px;
+  padding-bottom: 17px;
+  font-family: "Playfair Display", serif;
+  font: bold;
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+  transform: scale(1.6);
+  background-color: white;
+}
+
+h1:hover {
+  color: wheat;
+  background-color: rgb(3, 58, 10);
+  transition: 0.4s 0.1s;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font: bold;
+  transform: scale(1.6);
+  padding: 15px;
+  margin: 2rem;
+  margin-bottom: 0;
+}
+
+h2:hover {
+  color: rgb(3, 58, 10);
+  transition: 0.5s 0.1s;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-width: 400px;
+  max-height: 400px;
+  margin: 4rem auto;
+  border-radius: 10px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  padding-bottom: 5rem;
+  font-size: 20px;
+}
+
+/* .first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+section p:last-child {
+  font-style: italic;
+}
+
+section p {
+  font-style: italic;
+}
+
+h3 {
+  padding-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(36, 36, 36);
+}
+
+footer > * {
+  color: white;
+  background-color: inherit;
+}
+
+footer div a {
+  background-color: inherit;
+}
+
+footer p a {
+  background-color: inherit;
+}
+
+footer div p {
+  background-color: inherit;
+}
+
+
+@media (max-width: 768px) {
+  .page-header {
+    background-image: none;
+    max-height: 300px;
+  }
+
+  h1:hover {
+    color: white;
+    background-color: rgb(36, 36, 36);
+  }
+
+  section {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1, h2 {
+    transform: none;
+  }
+}
